@@ -1,2 +1,6 @@
-// Optional: Can be expanded for more animations in future
-console.log("Happy Birthday Website Loaded!");
+// Make candles clickable to blow them out
+document.querySelectorAll('.candle').forEach(candle => {
+    candle.addEventListener('click', () => {
+        candle.classList.add('out');
+    });
+});
