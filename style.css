@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.cake {
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+
+.cake-body {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background: #ff6f61;
+    border-radius: 0 0 30px 30px;
+    box-shadow: inset 0 -10px #e94e3d;
+}
+
+.candles {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.candle {
+    width: 6px;
+    height: 40px;
+    background: #fff;
+    border-radius: 3px;
+    position: relative;
+}
+
+.candle::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, yellow 40%, transparent 70%);
+    border-radius: 50%;
+    animation: flicker 0.2s infinite alternate;
+}
+
+@keyframes flicker {
+    0% { transform: translateX(-50%) scale(1); opacity: 1; }
+    100% { transform: translateX(-50%) scale(1.2); opacity: 0.8; }
+}
