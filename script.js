@@ -1,6 +1,6 @@
 // ========== CUSTOMIZATION VARIABLES ==========
 // Change these variables to personalize the birthday message
-const BIRTHDAY_PERSON_NAME = "Jonnothan";  // Change this to the person's name
+const BIRTHDAY_PERSON_NAME = "Jonothan";  // Change this to the person's name
 const CUSTOM_MESSAGE = "Hope your special day is amazing and filled with all your favorite things!"; // Change this to your custom message
 
 // Number of pictures you have (pic1.jpg, pic2.jpg, etc.)
